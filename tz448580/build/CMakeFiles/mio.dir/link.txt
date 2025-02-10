@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmio.a CMakeFiles/mio.dir/src/mio.c.o
+/usr/bin/ranlib libmio.a

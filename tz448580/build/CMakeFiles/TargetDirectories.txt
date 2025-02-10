@@ -1,0 +1,13 @@
+/home/tomek/Studia/PW24/PW-3/tz448580/build/CMakeFiles/err.dir
+/home/tomek/Studia/PW24/PW-3/tz448580/build/CMakeFiles/mio.dir
+/home/tomek/Studia/PW24/PW-3/tz448580/build/CMakeFiles/future.dir
+/home/tomek/Studia/PW24/PW-3/tz448580/build/CMakeFiles/executor.dir
+/home/tomek/Studia/PW24/PW-3/tz448580/build/CMakeFiles/edit_cache.dir
+/home/tomek/Studia/PW24/PW-3/tz448580/build/CMakeFiles/rebuild_cache.dir
+/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/CMakeFiles/test_utils.dir
+/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/CMakeFiles/executor_test.dir
+/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/CMakeFiles/hard_work_test.dir
+/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/CMakeFiles/mio_test.dir
+/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/CMakeFiles/then_test.dir
+/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/CMakeFiles/edit_cache.dir
+/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/CMakeFiles/rebuild_cache.dir

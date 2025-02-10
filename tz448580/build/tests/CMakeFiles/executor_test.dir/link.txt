@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wall -Wextra -Wno-sign-compare -Wno-unused-parameter -Wuninitialized -Wmissing-field-initializers CMakeFiles/executor_test.dir/executor_test.c.o -o executor_test  ../libexecutor.a ../libmio.a ../libfuture.a ../libmio.a ../liberr.a 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libexecutor.a CMakeFiles/executor.dir/src/executor.c.o
+/usr/bin/ranlib libexecutor.a

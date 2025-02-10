@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wall -Wextra -Wno-sign-compare -Wno-unused-parameter -Wuninitialized -Wmissing-field-initializers CMakeFiles/hard_work_test.dir/hard_work_test.c.o -o hard_work_test  ../libexecutor.a ../libmio.a ../libfuture.a ../liberr.a ../libmio.a ../liberr.a 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfuture.a CMakeFiles/future.dir/src/future_combinators.c.o CMakeFiles/future.dir/src/future_examples.c.o
+/usr/bin/ranlib libfuture.a
