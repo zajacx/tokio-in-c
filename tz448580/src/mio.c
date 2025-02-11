@@ -66,8 +66,6 @@ Mio* mio_create(Executor* executor) {
 }
 
 void mio_destroy(Mio* mio) {
-    // 2. zamknij deskryptor epoll_fd (close())
-    // 4. zwolnij Mio
     close(mio->epoll_fd);
     free(mio);
 }
@@ -99,7 +97,6 @@ int mio_unregister(Mio* mio, int fd)
     if (epoll_ctl(mio->epoll_fd, EPOLL_CTL_DEL, fd, NULL) == -1) {
         perror("epoll_ctl (EPOLL_CTL_DEL)");
     }
-    close(fd);
     return 0;
 }
 
