@@ -52,4 +52,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/CMakeFiles/then_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/combined_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/basic_then_test.dir/DependInfo.cmake"
+  "tests/CMakeFiles/join_test.dir/DependInfo.cmake"
+  "tests/CMakeFiles/basic_join_test.dir/DependInfo.cmake"
   )

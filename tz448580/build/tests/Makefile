@@ -214,6 +214,58 @@ basic_then_test/fast:
 	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_then_test.dir/build.make tests/CMakeFiles/basic_then_test.dir/build
 .PHONY : basic_then_test/fast
 
+# Convenience name for target.
+tests/CMakeFiles/join_test.dir/rule:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/join_test.dir/rule
+.PHONY : tests/CMakeFiles/join_test.dir/rule
+
+# Convenience name for target.
+join_test: tests/CMakeFiles/join_test.dir/rule
+.PHONY : join_test
+
+# fast build rule for target.
+join_test/fast:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/join_test.dir/build.make tests/CMakeFiles/join_test.dir/build
+.PHONY : join_test/fast
+
+# Convenience name for target.
+tests/CMakeFiles/basic_join_test.dir/rule:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/basic_join_test.dir/rule
+.PHONY : tests/CMakeFiles/basic_join_test.dir/rule
+
+# Convenience name for target.
+basic_join_test: tests/CMakeFiles/basic_join_test.dir/rule
+.PHONY : basic_join_test
+
+# fast build rule for target.
+basic_join_test/fast:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_join_test.dir/build.make tests/CMakeFiles/basic_join_test.dir/build
+.PHONY : basic_join_test/fast
+
+basic_join_test.o: basic_join_test.c.o
+.PHONY : basic_join_test.o
+
+# target to build an object file
+basic_join_test.c.o:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_join_test.dir/build.make tests/CMakeFiles/basic_join_test.dir/basic_join_test.c.o
+.PHONY : basic_join_test.c.o
+
+basic_join_test.i: basic_join_test.c.i
+.PHONY : basic_join_test.i
+
+# target to preprocess a source file
+basic_join_test.c.i:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_join_test.dir/build.make tests/CMakeFiles/basic_join_test.dir/basic_join_test.c.i
+.PHONY : basic_join_test.c.i
+
+basic_join_test.s: basic_join_test.c.s
+.PHONY : basic_join_test.s
+
+# target to generate assembly for a file
+basic_join_test.c.s:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_join_test.dir/build.make tests/CMakeFiles/basic_join_test.dir/basic_join_test.c.s
+.PHONY : basic_join_test.c.s
+
 basic_then_test.o: basic_then_test.c.o
 .PHONY : basic_then_test.o
 
@@ -310,6 +362,30 @@ hard_work_test.c.s:
 	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/hard_work_test.dir/build.make tests/CMakeFiles/hard_work_test.dir/hard_work_test.c.s
 .PHONY : hard_work_test.c.s
 
+join_test.o: join_test.c.o
+.PHONY : join_test.o
+
+# target to build an object file
+join_test.c.o:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/join_test.dir/build.make tests/CMakeFiles/join_test.dir/join_test.c.o
+.PHONY : join_test.c.o
+
+join_test.i: join_test.c.i
+.PHONY : join_test.i
+
+# target to preprocess a source file
+join_test.c.i:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/join_test.dir/build.make tests/CMakeFiles/join_test.dir/join_test.c.i
+.PHONY : join_test.c.i
+
+join_test.s: join_test.c.s
+.PHONY : join_test.s
+
+# target to generate assembly for a file
+join_test.c.s:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/join_test.dir/build.make tests/CMakeFiles/join_test.dir/join_test.c.s
+.PHONY : join_test.c.s
+
 mio_test.o: mio_test.c.o
 .PHONY : mio_test.o
 
@@ -390,13 +466,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... basic_join_test"
 	@echo "... basic_then_test"
 	@echo "... combined_test"
 	@echo "... executor_test"
 	@echo "... hard_work_test"
+	@echo "... join_test"
 	@echo "... mio_test"
 	@echo "... test_utils"
 	@echo "... then_test"
+	@echo "... basic_join_test.o"
+	@echo "... basic_join_test.i"
+	@echo "... basic_join_test.s"
 	@echo "... basic_then_test.o"
 	@echo "... basic_then_test.i"
 	@echo "... basic_then_test.s"
@@ -409,6 +490,9 @@ help:
 	@echo "... hard_work_test.o"
 	@echo "... hard_work_test.i"
 	@echo "... hard_work_test.s"
+	@echo "... join_test.o"
+	@echo "... join_test.i"
+	@echo "... join_test.s"
 	@echo "... mio_test.o"
 	@echo "... mio_test.i"
 	@echo "... mio_test.s"

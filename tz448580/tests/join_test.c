@@ -41,7 +41,7 @@ int main()
     // Create a pipe that will be filled with `message` 3 bytes at a time,
     // then wait 2 seconds before closing the write end.
     const char* message = "aaabbbcccd\n";
-    int read_fd1 = create_example_read_pipe_end(message, 3, 0, 2);
+    int read_fd1 = create_example_read_pipe_end(message, 3, 2, 2);
 
     // Make a future that reads the message from the pipe, then capitalizes it, the prints it.
     // This should succeed, because we read exactly all the bytes of message, including '\0'.
@@ -56,7 +56,7 @@ int main()
     // Make another future for another pipe, as before, but with a larger buffer.
     // This should progress concurrently with good_future, but eventually fail
     // (only after the write-end of the pipe is closed), because there aren't enough bytes to read.
-    int read_fd2 = create_example_read_pipe_end(message, 3, 0, 2);
+    int read_fd2 = create_example_read_pipe_end(message, 3, 2, 2);
     uint8_t large_buffer[1000];
     PipeReadFuture f1_bad = pipe_read_future_create(read_fd2, large_buffer, sizeof(large_buffer));
     ApplyFuture f2_bad = apply_future_create(capitalize);
@@ -89,8 +89,6 @@ int main()
     // Fixed error: close file descriptors
     close(read_fd1);
     close(read_fd2);
-
-    debug("All tests passed!\n");
 
     return 0;
 }

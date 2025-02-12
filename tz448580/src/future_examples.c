@@ -97,7 +97,7 @@ static FutureState pipe_write_progress(Future* base, Mio* mio, Waker waker)
         // There are some bytes yet to be written. Try writing to the pipe.
         ssize_t const bytes_written
             = write(self->fd, buffer + self->written_so_far, self->n - self->written_so_far);
-        debug("PipeReadFuture %p: write %zd, errno %s\n", self, bytes_written,
+        debug("PipeWriteFuture %p: write %zd, errno %s\n", self, bytes_written,
             strerror(bytes_written == -1 ? errno : 0));
 
         if (bytes_written == 0) {

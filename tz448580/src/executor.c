@@ -134,7 +134,6 @@ struct Executor {
 Executor* executor_create(size_t max_queue_size) {
     Executor* executor = (Executor*) malloc(sizeof(Executor));
     if (!executor) {
-        // TODO: error handling
         fatal("executor create (malloc)");
     }
 
@@ -155,24 +154,22 @@ Executor* executor_create(size_t max_queue_size) {
     return executor;
 }
 
-// Funkcja, która jest ZAWSZE wywoływana (prawdopodobnie przez Mio)
-// w momencie kiedy dane z jakiegoś deskryptora są gotowe do odczytu/zapisu.
-// Wówczas zadanie jest budzone i dodawane do kolejki Executora.
-// Definicja wakera:
-/*
-typedef struct Waker {
-    void* executor; // Executor to be notified about the future.
-    Future* future; // Future to be requeued up by executor.
-} Waker;
-*/
 void waker_wake(Waker* waker) {
     Executor* executor = (Executor*) waker->executor;
     Future* fut = waker->future;
-    // Put the future back into the executor's queue:
+    // Put the future back into the executor's queue (if it's not already there).
+    FutureQueue* queue = executor->queue;
+    for (size_t i = queue->head; i < queue->size; i = (i + 1) % queue->max_queue_size) {
+        debug("[WAKER] In the queue: %p\n", queue->futures[i]);
+        if (queue->futures[i] == fut) {
+            debug("[WAKER] Not requeuing the future, it's already in the queue\n");
+            return;
+        }
+    }
+    debug("[WAKER] Requeuing the future\n");
     executor_spawn(executor, fut);
 }
 
-// `executor_spawn()` must set `is_active` flag.
 void executor_spawn(Executor* executor, Future* fut) {
     if (!executor || !fut) {
         // TODO: posprzątać wszystko
@@ -187,19 +184,6 @@ void executor_spawn(Executor* executor, Future* fut) {
     queue_push(executor->queue, fut);
 }
 
-/*
-Funkcja executor_run uruchamia pętlę zdarzeń:
-1. dopóki w kolejce są jakieś zadania:
-  (a) pobierz zadanie i spróbuj je wykonać.
-  (b) jeśli zakończyło się kodem COMPLETED/FAILURE, zakończ obsługę.
-  (c) wpp jeśli zakończyło się kodem PENDING:
-      (i) zarejestruj deskryptor związany z zadaniem w Mio
-      (ii) upewnij się, że waker jest ustawiony
-2. jeśli nie ma zadań w kolejce, wywołaj mio_poll
-  (a) z pomocą funkcji udostępnianej przez Mio, wywołaj wakery dla
-      future'ów, które oczekują na I/O i wrzuć do kolejki executora.
-  (b) wróć do punktu 1.
-*/
 void executor_run(Executor* executor) {
     if (!executor) {
         // TODO: posprzątać wszystko
@@ -230,7 +214,6 @@ void executor_run(Executor* executor) {
                     executor->active--;
                     break;
                 case FUTURE_PENDING:
-                    // Tutaj nie wywołujemy mio_register, bo to się dzieje w progress().
                     break;
             }
         }

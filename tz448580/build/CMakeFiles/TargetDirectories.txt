@@ -11,5 +11,7 @@
 /home/tomek/Studia/PW24/PW-3/tz448580/build/tests/CMakeFiles/then_test.dir
 /home/tomek/Studia/PW24/PW-3/tz448580/build/tests/CMakeFiles/combined_test.dir
 /home/tomek/Studia/PW24/PW-3/tz448580/build/tests/CMakeFiles/basic_then_test.dir
+/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/CMakeFiles/join_test.dir
+/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/CMakeFiles/basic_join_test.dir
 /home/tomek/Studia/PW24/PW-3/tz448580/build/tests/CMakeFiles/edit_cache.dir
 /home/tomek/Studia/PW24/PW-3/tz448580/build/tests/CMakeFiles/rebuild_cache.dir

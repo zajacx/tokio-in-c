@@ -33,9 +33,6 @@ void set_nonblocking(int fd) {
     }
 }
 
-// TODO: delete this once not needed.
-#define UNIMPLEMENTED (exit(42))
-
 // ================================== Mio =================================
 
 struct Mio {

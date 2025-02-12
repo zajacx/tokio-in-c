@@ -259,6 +259,32 @@ basic_then_test/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_then_test.dir/build.make tests/CMakeFiles/basic_then_test.dir/build
 .PHONY : basic_then_test/fast
 
+#=============================================================================
+# Target rules for targets named join_test
+
+# Build rule for target.
+join_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 join_test
+.PHONY : join_test
+
+# fast build rule for target.
+join_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/join_test.dir/build.make tests/CMakeFiles/join_test.dir/build
+.PHONY : join_test/fast
+
+#=============================================================================
+# Target rules for targets named basic_join_test
+
+# Build rule for target.
+basic_join_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basic_join_test
+.PHONY : basic_join_test
+
+# fast build rule for target.
+basic_join_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_join_test.dir/build.make tests/CMakeFiles/basic_join_test.dir/build
+.PHONY : basic_join_test/fast
+
 src/err.o: src/err.c.o
 .PHONY : src/err.o
 
@@ -387,6 +413,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... basic_join_test"
 	@echo "... basic_then_test"
 	@echo "... combined_test"
 	@echo "... err"
@@ -394,6 +421,7 @@ help:
 	@echo "... executor_test"
 	@echo "... future"
 	@echo "... hard_work_test"
+	@echo "... join_test"
 	@echo "... mio"
 	@echo "... mio_test"
 	@echo "... test_utils"
