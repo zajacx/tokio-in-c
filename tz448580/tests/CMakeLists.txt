@@ -15,9 +15,18 @@ target_link_libraries(mio_test executor mio future test_utils)
 add_executable(then_test then_test.c)
 target_link_libraries(then_test executor mio future err test_utils)
 
+# to delete!
+add_executable(combined_test combined_test.c)
+target_link_libraries(combined_test executor mio future err test_utils)
+
+# to delete!
+add_executable(basic_then_test basic_then_test.c)
+target_link_libraries(basic_then_test executor mio future err test_utils)
+
 
 enable_testing()
 add_test(NAME ExecutorTest COMMAND executor_test)
 add_test(NAME HardWorkTest COMMAND hard_work_test)
 add_test(NAME MioTest COMMAND mio_test)
 add_test(NAME ThenTest COMMAND then_test)
+add_test(NAME CombinedTest COMMAND combined_test)

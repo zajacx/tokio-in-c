@@ -50,4 +50,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/CMakeFiles/hard_work_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/mio_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/then_test.dir/DependInfo.cmake"
+  "tests/CMakeFiles/combined_test.dir/DependInfo.cmake"
+  "tests/CMakeFiles/basic_then_test.dir/DependInfo.cmake"
   )

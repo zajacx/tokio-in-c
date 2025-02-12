@@ -17,6 +17,12 @@
 #include "mio.h"
 #include "utils.h"
 
+void* increment(void* arg)
+{
+    intptr_t number = (intptr_t)arg;
+    return (void*)(number + 1);
+}
+
 int main()
 {
     // In this test, we create two futures that read from two slow pipes, independently.
@@ -40,11 +46,24 @@ int main()
     uint8_t buffer2[strlen(message) + 1];
     PipeReadFuture f2 = pipe_read_future_create(read_fd2, buffer2, sizeof(buffer2));
 
+    // Create simple increment tasks.
+    ApplyFuture f3 = apply_future_create(increment);
+    f3.base.arg = (void*)10;
+
+    ApplyFuture f4 = apply_future_create(increment);
+    f4.base.arg = (void*)20;
+
+    ApplyFuture f5 = apply_future_create(increment);
+    f5.base.arg = (void*)30;
+
     // Create and run executor.
-    Executor* executor = executor_create(42);
+    Executor* executor = executor_create(10);
 
     executor_spawn(executor, (Future*)&f1);
     executor_spawn(executor, (Future*)&f2);
+    executor_spawn(executor, (Future*)&f3);
+    executor_spawn(executor, (Future*)&f4);
+    executor_spawn(executor, (Future*)&f5);
 
     executor_run(executor);
 
@@ -56,12 +75,19 @@ int main()
     assert(elapsed_time >= 4.0);
     assert(elapsed_time < 8.0);
 
+    // Get results from futures.
+    intptr_t result3 = (intptr_t)f3.base.ok;
+    intptr_t result4 = (intptr_t)f4.base.ok;
+    intptr_t result5 = (intptr_t)f5.base.ok;
+    debug("Result 3: %ld\n", (long)result3);
+    debug("Result 4: %ld\n", (long)result4);
+    debug("Result 5: %ld\n", (long)result5);
+    assert(result3 == 11);
+    assert(result4 == 21);
+    assert(result5 == 31);
+
     // Destroy the executor
     executor_destroy(executor);
-
-    // Fixed error: closing file descriptors
-    close(read_fd1);
-    close(read_fd2);
 
     return 0;
 }

@@ -186,6 +186,82 @@ then_test/fast:
 	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/then_test.dir/build.make tests/CMakeFiles/then_test.dir/build
 .PHONY : then_test/fast
 
+# Convenience name for target.
+tests/CMakeFiles/combined_test.dir/rule:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/combined_test.dir/rule
+.PHONY : tests/CMakeFiles/combined_test.dir/rule
+
+# Convenience name for target.
+combined_test: tests/CMakeFiles/combined_test.dir/rule
+.PHONY : combined_test
+
+# fast build rule for target.
+combined_test/fast:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/combined_test.dir/build.make tests/CMakeFiles/combined_test.dir/build
+.PHONY : combined_test/fast
+
+# Convenience name for target.
+tests/CMakeFiles/basic_then_test.dir/rule:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/basic_then_test.dir/rule
+.PHONY : tests/CMakeFiles/basic_then_test.dir/rule
+
+# Convenience name for target.
+basic_then_test: tests/CMakeFiles/basic_then_test.dir/rule
+.PHONY : basic_then_test
+
+# fast build rule for target.
+basic_then_test/fast:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_then_test.dir/build.make tests/CMakeFiles/basic_then_test.dir/build
+.PHONY : basic_then_test/fast
+
+basic_then_test.o: basic_then_test.c.o
+.PHONY : basic_then_test.o
+
+# target to build an object file
+basic_then_test.c.o:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_then_test.dir/build.make tests/CMakeFiles/basic_then_test.dir/basic_then_test.c.o
+.PHONY : basic_then_test.c.o
+
+basic_then_test.i: basic_then_test.c.i
+.PHONY : basic_then_test.i
+
+# target to preprocess a source file
+basic_then_test.c.i:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_then_test.dir/build.make tests/CMakeFiles/basic_then_test.dir/basic_then_test.c.i
+.PHONY : basic_then_test.c.i
+
+basic_then_test.s: basic_then_test.c.s
+.PHONY : basic_then_test.s
+
+# target to generate assembly for a file
+basic_then_test.c.s:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_then_test.dir/build.make tests/CMakeFiles/basic_then_test.dir/basic_then_test.c.s
+.PHONY : basic_then_test.c.s
+
+combined_test.o: combined_test.c.o
+.PHONY : combined_test.o
+
+# target to build an object file
+combined_test.c.o:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/combined_test.dir/build.make tests/CMakeFiles/combined_test.dir/combined_test.c.o
+.PHONY : combined_test.c.o
+
+combined_test.i: combined_test.c.i
+.PHONY : combined_test.i
+
+# target to preprocess a source file
+combined_test.c.i:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/combined_test.dir/build.make tests/CMakeFiles/combined_test.dir/combined_test.c.i
+.PHONY : combined_test.c.i
+
+combined_test.s: combined_test.c.s
+.PHONY : combined_test.s
+
+# target to generate assembly for a file
+combined_test.c.s:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/combined_test.dir/build.make tests/CMakeFiles/combined_test.dir/combined_test.c.s
+.PHONY : combined_test.c.s
+
 executor_test.o: executor_test.c.o
 .PHONY : executor_test.o
 
@@ -314,11 +390,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... basic_then_test"
+	@echo "... combined_test"
 	@echo "... executor_test"
 	@echo "... hard_work_test"
 	@echo "... mio_test"
 	@echo "... test_utils"
 	@echo "... then_test"
+	@echo "... basic_then_test.o"
+	@echo "... basic_then_test.i"
+	@echo "... basic_then_test.s"
+	@echo "... combined_test.o"
+	@echo "... combined_test.i"
+	@echo "... combined_test.s"
 	@echo "... executor_test.o"
 	@echo "... executor_test.i"
 	@echo "... executor_test.s"

@@ -36,59 +36,39 @@ void* capitalize(void* arg)
 
 int main()
 {
-    // An end-to-end test that demonstrates the use of ThenFuture to chain futures.
+    // Basic test of the ThenFuture combinator.
 
     // Create a pipe that will be filled with `message` 3 bytes at a time,
     // then wait 2 seconds before closing the write end.
     const char* message = "aaabbbcccd\n";
-    int read_fd1 = create_example_read_pipe_end(message, 3, 0, 2);
+    int read_fd = create_example_read_pipe_end(message, 3, 0, 2);
+
+    Executor* executor = executor_create(42);    
 
     // Make a future that reads the message from the pipe, then capitalizes it, the prints it.
     // This should succeed, because we read exactly all the bytes of message, including '\0'.
     uint8_t buffer[strlen(message) + 1];
-    PipeReadFuture f1 = pipe_read_future_create(read_fd1, buffer, sizeof(buffer));
+    PipeReadFuture f1 = pipe_read_future_create(read_fd, buffer, sizeof(buffer));
     ApplyFuture f2 = apply_future_create(capitalize);
     ThenFuture f12 = future_then((Future*)&f1, (Future*)&f2);
-    PipeWriteFuture f3 = pipe_write_future_create(STDOUT_FILENO, sizeof(buffer), true);
-    ThenFuture f123 = future_then((Future*)&f12, (Future*)&f3);
-    Future* good_future = (Future*)&f123;
+    Future* good_future = (Future*)&f12;
 
-    // Make another future for another pipe, as before, but with a larger buffer.
-    // This should progress concurrently with good_future, but eventually fail
-    // (only after the write-end of the pipe is closed), because there aren't enough bytes to read.
-    int read_fd2 = create_example_read_pipe_end(message, 3, 0, 2);
-    uint8_t large_buffer[1000];
-    PipeReadFuture f1_bad = pipe_read_future_create(read_fd2, large_buffer, sizeof(large_buffer));
-    ApplyFuture f2_bad = apply_future_create(capitalize);
-    ThenFuture f12_bad = future_then((Future*)&f1_bad, (Future*)&f2_bad);
-    PipeWriteFuture f3_bad = pipe_write_future_create(STDOUT_FILENO, sizeof(large_buffer), true);
-    ThenFuture f123_bad = future_then((Future*)&f12_bad, (Future*)&f3_bad);
-
-    Executor* executor = executor_create(42);
-
-    executor_spawn(executor, (Future*)&f123_bad);
     executor_spawn(executor, good_future);
 
     // Run the executor
+    debug("Running the executor\n");
     executor_run(executor);
+    debug("Executor finished\n");
 
     // Check everything is as expected.
     assert(good_future->errcode == FUTURE_SUCCESS);
     assert(good_future->ok == buffer); // capitalize and PipeWriteFuture just return the buffer.
     assert(memcmp(buffer, "AAABBBCCCD\n", sizeof(buffer)) == 0); // the buffer was capitalized.
 
-    assert(f123_bad.base.errcode == THEN_FUTURE_ERR_FUT1_FAILED); // f123_bad failed because f12_bad failed.
-    assert(f12_bad.base.errcode == THEN_FUTURE_ERR_FUT1_FAILED); // f12_bad failed because f1_bad failed.
-    assert(f1_bad.base.errcode == PIPE_FUTURE_ERR_EOF); // f1_bad failed because it reached EOF.
-    assert(((ThenFuture*)f123_bad.fut1)->fut1 == (Future*)&f1_bad);
-    assert(memcmp(large_buffer, message, sizeof(buffer)) == 0);  // f1_bad read until EOF, but capitalize was never called.
-
     // Destroy the executor
     executor_destroy(executor);
 
-    // Fixed error: close file descriptors
-    close(read_fd1);
-    close(read_fd2);
+    close(read_fd);
 
     return 0;
 }
