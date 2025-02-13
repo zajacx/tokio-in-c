@@ -20,7 +20,8 @@ typedef struct FutureQueue {
     size_t tail;
 } FutureQueue;
 
-void queue_debug_print(FutureQueue* queue, bool pop) {
+void queue_debug_print(FutureQueue* queue, bool pop)
+{
     if (!queue) {
         debug("[DEBUG] Queue is NULL\n");
         return;
@@ -49,7 +50,8 @@ void queue_debug_print(FutureQueue* queue, bool pop) {
     debug("\n");
 }
 
-FutureQueue* queue_create(size_t max_queue_size) {
+FutureQueue* queue_create(size_t max_queue_size)
+{
     FutureQueue* queue = (FutureQueue*) malloc(sizeof(FutureQueue));
     if (!queue) {
         return NULL;
@@ -74,10 +76,8 @@ FutureQueue* queue_create(size_t max_queue_size) {
     return queue;
 }
 
-// TODO: przemyśleć kwestię boola
-// Tu zakładamy, że Future gdzieś już istnieje i wskaźnik na niego
-// może być przekazany do kolejki.
-bool queue_push(FutureQueue* queue, Future* future) {
+bool queue_push(FutureQueue* queue, Future* future)
+{
     if (!queue || !future) {
         return false;
     }
@@ -96,9 +96,8 @@ bool queue_push(FutureQueue* queue, Future* future) {
     return true;
 }
 
-// Uwaga! Cyt. "za zwolnienie Future odpowiedzialny jest ten,
-// kto go stworzył, czyli nie egzekutor."
-Future* queue_pop(FutureQueue* queue) {
+Future* queue_pop(FutureQueue* queue)
+{
     if (!queue || queue->size == 0) {
         return NULL;
     }
@@ -113,7 +112,8 @@ Future* queue_pop(FutureQueue* queue) {
     return fut;
 }
 
-void queue_destroy(FutureQueue* queue) {
+void queue_destroy(FutureQueue* queue)
+{
     if (queue) {
         free(queue->futures);
         free(queue);
@@ -131,7 +131,8 @@ struct Executor {
     int active; // Counter of futures with is_active set to true.
 };
 
-Executor* executor_create(size_t max_queue_size) {
+Executor* executor_create(size_t max_queue_size)
+{
     Executor* executor = (Executor*) malloc(sizeof(Executor));
     if (!executor) {
         fatal("executor create (malloc)");
@@ -154,7 +155,8 @@ Executor* executor_create(size_t max_queue_size) {
     return executor;
 }
 
-void waker_wake(Waker* waker) {
+void waker_wake(Waker* waker)
+{
     Executor* executor = (Executor*) waker->executor;
     Future* fut = waker->future;
     // Put the future back into the executor's queue (if it's not already there).
@@ -170,10 +172,15 @@ void waker_wake(Waker* waker) {
     executor_spawn(executor, fut);
 }
 
-void executor_spawn(Executor* executor, Future* fut) {
-    if (!executor || !fut) {
-        // TODO: posprzątać wszystko
+void executor_spawn(Executor* executor, Future* fut)
+{
+    if (!executor) {
         fatal("executor_spawn");
+    }
+
+    if (!fut) {
+        debug("fut is NULL\n");
+        return;
     }
     
     debug("[Executor] Spawned future\n");
@@ -181,14 +188,17 @@ void executor_spawn(Executor* executor, Future* fut) {
         fut->is_active = true;
         executor->active++;
     }
-    queue_push(executor->queue, fut);
+
+    bool ret = queue_push(executor->queue, fut);
+    if (!ret) {
+        debug("Spawn failed\n");
+    }
 }
 
-void executor_run(Executor* executor) {
+void executor_run(Executor* executor)
+{
     if (!executor) {
-        // TODO: posprzątać wszystko
-        debug("Executor is NULL\n");
-        fatal("executor run");
+        fatal("executor_run: executor is NULL\n");
     }
 
     debug("[Executor] Starting with %d tasks\n", executor->active);
@@ -225,7 +235,8 @@ void executor_run(Executor* executor) {
     
 }
 
-void executor_destroy(Executor* executor) {
+void executor_destroy(Executor* executor)
+{
     queue_destroy(executor->queue);
     mio_destroy(executor->mio);
     free(executor);
