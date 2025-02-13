@@ -1,0 +1,9 @@
+ExecutorTest 3 0.0322303
+HardWorkTest 3 1.85008
+MioTest 3 1.34487
+ThenTest 3 0.678026
+CombinedTest 3 1.34523
+BasicThenTest 3 0.67693
+JoinTest 3 3.3445
+BasicJoinTest 3 1.34459
+---

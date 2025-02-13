@@ -31,6 +31,10 @@ target_link_libraries(join_test executor mio future err test_utils)
 add_executable(basic_join_test basic_join_test.c)
 target_link_libraries(basic_join_test executor mio future err test_utils)
 
+# to delete!
+add_executable(basic_select_test basic_select_test.c)
+target_link_libraries(basic_select_test executor mio future err test_utils)
+
 
 enable_testing()
 add_test(NAME ExecutorTest COMMAND executor_test)
@@ -41,3 +45,4 @@ add_test(NAME CombinedTest COMMAND combined_test)
 add_test(NAME BasicThenTest COMMAND basic_then_test)
 add_test(NAME JoinTest COMMAND join_test)
 add_test(NAME BasicJoinTest COMMAND basic_join_test)
+add_test(NAME BasicSelectTest COMMAND basic_select_test)

@@ -285,6 +285,19 @@ basic_join_test/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_join_test.dir/build.make tests/CMakeFiles/basic_join_test.dir/build
 .PHONY : basic_join_test/fast
 
+#=============================================================================
+# Target rules for targets named basic_select_test
+
+# Build rule for target.
+basic_select_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basic_select_test
+.PHONY : basic_select_test
+
+# fast build rule for target.
+basic_select_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_select_test.dir/build.make tests/CMakeFiles/basic_select_test.dir/build
+.PHONY : basic_select_test/fast
+
 src/err.o: src/err.c.o
 .PHONY : src/err.o
 
@@ -414,6 +427,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... basic_join_test"
+	@echo "... basic_select_test"
 	@echo "... basic_then_test"
 	@echo "... combined_test"
 	@echo "... err"

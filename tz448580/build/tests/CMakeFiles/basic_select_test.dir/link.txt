@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wall -Wextra -Wno-sign-compare -Wno-unused-parameter -Wuninitialized -Wmissing-field-initializers CMakeFiles/basic_select_test.dir/basic_select_test.c.o -o basic_select_test  ../libexecutor.a ../libmio.a ../libfuture.a ../liberr.a libtest_utils.a ../libmio.a ../liberr.a 

@@ -1,0 +1,3031 @@
+Start testing: Feb 13 22:21 CET
+----------------------------------------------------------
+1/8 Testing: ExecutorTest
+1/8 Test: ExecutorTest
+Command: "/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/executor_test"
+Directory: /home/tomek/Studia/PW24/PW-3/tz448580/build/tests
+"ExecutorTest" start time: Feb 13 22:21 CET
+Output:
+----------------------------------------------------------
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 1024
+  - Head: 0, Tail: 1
+  - Elements: [0x7ffcb3dbcbb0] 
+Test: running the executor
+[Executor] Starting with 1 tasks
+[Executor] Main loop: found 1 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 1024
+  - Head: 1, Tail: 1
+  - Elements: (empty)
+ApplyFuture 0x7ffcb3dbcbb0 progress. Arg=0x2a
+Result: 43
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"ExecutorTest" end time: Feb 13 22:21 CET
+"ExecutorTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/8 Testing: HardWorkTest
+2/8 Test: HardWorkTest
+Command: "/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/hard_work_test"
+Directory: /home/tomek/Studia/PW24/PW-3/tz448580/build/tests
+"HardWorkTest" start time: Feb 13 22:21 CET
+Output:
+----------------------------------------------------------
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 0, Tail: 1
+  - Elements: [0x7fff8e876530] 
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 0, Tail: 2
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Starting with 2 tasks
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 1, Tail: 2
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 1, Tail: 3
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 2, Tail: 3
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 2, Tail: 4
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 3, Tail: 4
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 3, Tail: 5
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 4, Tail: 5
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 4, Tail: 6
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 5, Tail: 6
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 5, Tail: 7
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 6, Tail: 7
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 6, Tail: 8
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 7, Tail: 8
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 7, Tail: 9
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 8, Tail: 9
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 8, Tail: 10
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 9, Tail: 10
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 9, Tail: 11
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 10, Tail: 11
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 10, Tail: 12
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 11, Tail: 12
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 11, Tail: 13
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 12, Tail: 13
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 12, Tail: 14
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 13, Tail: 14
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 13, Tail: 15
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 14, Tail: 15
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 14, Tail: 16
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 15, Tail: 16
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 15, Tail: 17
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 16, Tail: 17
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 16, Tail: 18
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 17, Tail: 18
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 17, Tail: 19
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 18, Tail: 19
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 18, Tail: 20
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 19, Tail: 20
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 19, Tail: 21
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 20, Tail: 21
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 20, Tail: 22
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 21, Tail: 22
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 21, Tail: 23
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 22, Tail: 23
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 22, Tail: 24
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 23, Tail: 24
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 23, Tail: 25
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 24, Tail: 25
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 24, Tail: 26
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 25, Tail: 26
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 25, Tail: 27
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 26, Tail: 27
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 26, Tail: 28
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 27, Tail: 28
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 27, Tail: 29
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 28, Tail: 29
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 28, Tail: 30
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 29, Tail: 30
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 29, Tail: 31
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 30, Tail: 31
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 30, Tail: 32
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 31, Tail: 32
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 31, Tail: 33
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 32, Tail: 33
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 32, Tail: 34
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 33, Tail: 34
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 33, Tail: 35
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 34, Tail: 35
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 34, Tail: 36
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 35, Tail: 36
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 35, Tail: 37
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 36, Tail: 37
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 36, Tail: 38
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 37, Tail: 38
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 37, Tail: 39
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 38, Tail: 39
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 38, Tail: 40
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 39, Tail: 40
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 39, Tail: 41
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 40, Tail: 41
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 40, Tail: 0
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 41, Tail: 0
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 41, Tail: 1
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 0, Tail: 1
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 0, Tail: 2
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 1, Tail: 2
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 1, Tail: 3
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 2, Tail: 3
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 2, Tail: 4
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 3, Tail: 4
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 3, Tail: 5
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 4, Tail: 5
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 4, Tail: 6
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 5, Tail: 6
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 5, Tail: 7
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 6, Tail: 7
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 6, Tail: 8
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 7, Tail: 8
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 7, Tail: 9
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 8, Tail: 9
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 8, Tail: 10
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 9, Tail: 10
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 9, Tail: 11
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 10, Tail: 11
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 10, Tail: 12
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 11, Tail: 12
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 11, Tail: 13
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 12, Tail: 13
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 12, Tail: 14
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 13, Tail: 14
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 13, Tail: 15
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 14, Tail: 15
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 14, Tail: 16
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 15, Tail: 16
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 15, Tail: 17
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 16, Tail: 17
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 16, Tail: 18
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 17, Tail: 18
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 17, Tail: 19
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 18, Tail: 19
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 18, Tail: 20
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 19, Tail: 20
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 19, Tail: 21
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 20, Tail: 21
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 20, Tail: 22
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 21, Tail: 22
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 21, Tail: 23
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 22, Tail: 23
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 22, Tail: 24
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 23, Tail: 24
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 23, Tail: 25
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 24, Tail: 25
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 24, Tail: 26
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 25, Tail: 26
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 25, Tail: 27
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 26, Tail: 27
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 26, Tail: 28
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 27, Tail: 28
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 27, Tail: 29
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 28, Tail: 29
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 28, Tail: 30
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 29, Tail: 30
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 29, Tail: 31
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 30, Tail: 31
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 30, Tail: 32
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 31, Tail: 32
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 31, Tail: 33
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 32, Tail: 33
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 32, Tail: 34
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 33, Tail: 34
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 33, Tail: 35
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 34, Tail: 35
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 34, Tail: 36
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 35, Tail: 36
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 35, Tail: 37
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 36, Tail: 37
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 36, Tail: 38
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 37, Tail: 38
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 37, Tail: 39
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 38, Tail: 39
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 38, Tail: 40
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 39, Tail: 40
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 39, Tail: 41
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 40, Tail: 41
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 40, Tail: 0
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 41, Tail: 0
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 41, Tail: 1
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 0, Tail: 1
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 0, Tail: 2
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 1, Tail: 2
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 1, Tail: 3
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 2, Tail: 3
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 2, Tail: 4
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 3, Tail: 4
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 3, Tail: 5
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 4, Tail: 5
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 4, Tail: 6
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 5, Tail: 6
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 5, Tail: 7
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 6, Tail: 7
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 6, Tail: 8
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 7, Tail: 8
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 7, Tail: 9
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 8, Tail: 9
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 8, Tail: 10
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 9, Tail: 10
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 9, Tail: 11
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 10, Tail: 11
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 10, Tail: 12
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 11, Tail: 12
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 11, Tail: 13
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 12, Tail: 13
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 12, Tail: 14
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 13, Tail: 14
+  - Elements: [0x7fff8e876560] 
+[WAKER] In the queue: 0x7fff8e876560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 13, Tail: 15
+  - Elements: [0x7fff8e876560] [0x7fff8e876530] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 14, Tail: 15
+  - Elements: [0x7fff8e876530] 
+[WAKER] In the queue: 0x7fff8e876530
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 14, Tail: 16
+  - Elements: [0x7fff8e876530] [0x7fff8e876560] 
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 15, Tail: 16
+  - Elements: [0x7fff8e876560] 
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 16, Tail: 16
+  - Elements: (empty)
+percentage_done =  2% at 22:21:52
+percentage_done =  4% at 22:21:53
+percentage_done =  6% at 22:21:53
+percentage_done =  8% at 22:21:53
+percentage_done = 10% at 22:21:53
+percentage_done = 12% at 22:21:53
+percentage_done = 14% at 22:21:53
+percentage_done = 16% at 22:21:53
+percentage_done = 18% at 22:21:53
+percentage_done = 20% at 22:21:53
+percentage_done = 22% at 22:21:53
+percentage_done = 24% at 22:21:53
+percentage_done = 26% at 22:21:54
+percentage_done = 28% at 22:21:54
+percentage_done = 30% at 22:21:54
+percentage_done = 32% at 22:21:54
+percentage_done = 34% at 22:21:54
+percentage_done = 36% at 22:21:54
+percentage_done = 38% at 22:21:54
+percentage_done = 40% at 22:21:54
+percentage_done = 42% at 22:21:54
+percentage_done = 44% at 22:21:55
+percentage_done = 46% at 22:21:55
+percentage_done = 48% at 22:21:55
+percentage_done = 50% at 22:21:55
+percentage_done = 52% at 22:21:55
+percentage_done = 54% at 22:21:55
+percentage_done = 56% at 22:21:55
+percentage_done = 58% at 22:21:55
+percentage_done = 60% at 22:21:55
+percentage_done = 62% at 22:21:56
+percentage_done = 64% at 22:21:56
+percentage_done = 66% at 22:21:56
+percentage_done = 68% at 22:21:56
+percentage_done = 70% at 22:21:56
+percentage_done = 72% at 22:21:56
+percentage_done = 74% at 22:21:56
+percentage_done = 76% at 22:21:56
+percentage_done = 78% at 22:21:57
+percentage_done = 80% at 22:21:57
+percentage_done = 82% at 22:21:57
+percentage_done = 84% at 22:21:57
+percentage_done = 86% at 22:21:57
+percentage_done = 88% at 22:21:57
+percentage_done = 90% at 22:21:57
+percentage_done = 92% at 22:21:57
+percentage_done = 94% at 22:21:57
+percentage_done = 96% at 22:21:58
+percentage_done = 98% at 22:21:58
+percentage_done = 100% at 22:21:58
+<end of output>
+Test time =   5.55 sec
+----------------------------------------------------------
+Test Passed.
+"HardWorkTest" end time: Feb 13 22:21 CET
+"HardWorkTest" time elapsed: 00:00:05
+----------------------------------------------------------
+
+3/8 Testing: MioTest
+3/8 Test: MioTest
+Command: "/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/mio_test"
+Directory: /home/tomek/Studia/PW24/PW-3/tz448580/build/tests
+"MioTest" start time: Feb 13 22:21 CET
+Output:
+----------------------------------------------------------
+Will write message='AAABBBCCCD'
+Will write message='AAABBBCCCD'
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 0, Tail: 1
+  - Elements: [0x7fff485baa70] 
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 0, Tail: 2
+  - Elements: [0x7fff485baa70] [0x7fff485baac0] 
+[Executor] Starting with 2 tasks
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 1, Tail: 2
+  - Elements: [0x7fff485baac0] 
+PipeReadFuture 0x7fff485baa70 progress. read_so_far=0, n=11
+PipeReadFuture 0x7fff485baa70: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x56cc5ac64450) fd = 4
+ with future 0x7fff485baa70
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 2, Tail: 2
+  - Elements: (empty)
+PipeReadFuture 0x7fff485baac0 progress. read_so_far=0, n=11
+PipeReadFuture 0x7fff485baac0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x56cc5ac64450) fd = 5
+ with future 0x7fff485baac0
+Mio (0x56cc5ac64450) polling
+Mio (0x56cc5ac64450) received event on fd = 1213966960
+Mio (0x56cc5ac64450) waking up future 0x7fff485baa70
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 2, Tail: 3
+  - Elements: [0x7fff485baa70] 
+Mio (0x56cc5ac64450) received event on fd = 1213967040
+Mio (0x56cc5ac64450) waking up future 0x7fff485baac0
+[WAKER] In the queue: 0x7fff485baa70
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 2, Tail: 4
+  - Elements: [0x7fff485baa70] [0x7fff485baac0] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 3, Tail: 4
+  - Elements: [0x7fff485baac0] 
+PipeReadFuture 0x7fff485baa70 progress. read_so_far=0, n=11
+PipeReadFuture 0x7fff485baa70: read 3, errno Success
+PipeReadFuture 0x7fff485baa70: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x56cc5ac64450) fd = 4
+ with future 0x7fff485baa70
+[Mio] fd already registered
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 4, Tail: 4
+  - Elements: (empty)
+PipeReadFuture 0x7fff485baac0 progress. read_so_far=0, n=11
+PipeReadFuture 0x7fff485baac0: read 3, errno Success
+PipeReadFuture 0x7fff485baac0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x56cc5ac64450) fd = 5
+ with future 0x7fff485baac0
+[Mio] fd already registered
+Mio (0x56cc5ac64450) polling
+Mio (0x56cc5ac64450) received event on fd = 1213966960
+Mio (0x56cc5ac64450) waking up future 0x7fff485baa70
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 4, Tail: 5
+  - Elements: [0x7fff485baa70] 
+Mio (0x56cc5ac64450) received event on fd = 1213967040
+Mio (0x56cc5ac64450) waking up future 0x7fff485baac0
+[WAKER] In the queue: 0x7fff485baa70
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 4, Tail: 6
+  - Elements: [0x7fff485baa70] [0x7fff485baac0] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 5, Tail: 6
+  - Elements: [0x7fff485baac0] 
+PipeReadFuture 0x7fff485baa70 progress. read_so_far=3, n=11
+PipeReadFuture 0x7fff485baa70: read 3, errno Success
+PipeReadFuture 0x7fff485baa70: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x56cc5ac64450) fd = 4
+ with future 0x7fff485baa70
+[Mio] fd already registered
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 6, Tail: 6
+  - Elements: (empty)
+PipeReadFuture 0x7fff485baac0 progress. read_so_far=3, n=11
+PipeReadFuture 0x7fff485baac0: read 3, errno Success
+PipeReadFuture 0x7fff485baac0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x56cc5ac64450) fd = 5
+ with future 0x7fff485baac0
+[Mio] fd already registered
+Mio (0x56cc5ac64450) polling
+Mio (0x56cc5ac64450) received event on fd = 1213966960
+Mio (0x56cc5ac64450) waking up future 0x7fff485baa70
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 6, Tail: 7
+  - Elements: [0x7fff485baa70] 
+Mio (0x56cc5ac64450) received event on fd = 1213967040
+Mio (0x56cc5ac64450) waking up future 0x7fff485baac0
+[WAKER] In the queue: 0x7fff485baa70
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 6, Tail: 8
+  - Elements: [0x7fff485baa70] [0x7fff485baac0] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 7, Tail: 8
+  - Elements: [0x7fff485baac0] 
+PipeReadFuture 0x7fff485baa70 progress. read_so_far=6, n=11
+PipeReadFuture 0x7fff485baa70: read 3, errno Success
+PipeReadFuture 0x7fff485baa70: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x56cc5ac64450) fd = 4
+ with future 0x7fff485baa70
+[Mio] fd already registered
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 8, Tail: 8
+  - Elements: (empty)
+PipeReadFuture 0x7fff485baac0 progress. read_so_far=6, n=11
+PipeReadFuture 0x7fff485baac0: read 3, errno Success
+PipeReadFuture 0x7fff485baac0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x56cc5ac64450) fd = 5
+ with future 0x7fff485baac0
+[Mio] fd already registered
+Mio (0x56cc5ac64450) polling
+Mio (0x56cc5ac64450) received event on fd = 1213967040
+Mio (0x56cc5ac64450) waking up future 0x7fff485baac0
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 8, Tail: 9
+  - Elements: [0x7fff485baac0] 
+Mio (0x56cc5ac64450) received event on fd = 1213966960
+Mio (0x56cc5ac64450) waking up future 0x7fff485baa70
+[WAKER] In the queue: 0x7fff485baac0
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 8, Tail: 10
+  - Elements: [0x7fff485baac0] [0x7fff485baa70] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 9, Tail: 10
+  - Elements: [0x7fff485baa70] 
+PipeReadFuture 0x7fff485baac0 progress. read_so_far=9, n=11
+PipeReadFuture 0x7fff485baac0: read 2, errno Success
+Unregistering (from Mio = 0x56cc5ac64450) fd = 5
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 10, Tail: 10
+  - Elements: (empty)
+PipeReadFuture 0x7fff485baa70 progress. read_so_far=9, n=11
+PipeReadFuture 0x7fff485baa70: read 2, errno Success
+Unregistering (from Mio = 0x56cc5ac64450) fd = 4
+Elapsed time: 4.001939 seconds
+<end of output>
+Test time =   4.03 sec
+----------------------------------------------------------
+Test Passed.
+"MioTest" end time: Feb 13 22:22 CET
+"MioTest" time elapsed: 00:00:04
+----------------------------------------------------------
+
+4/8 Testing: ThenTest
+4/8 Test: ThenTest
+Command: "/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/then_test"
+Directory: /home/tomek/Studia/PW24/PW-3/tz448580/build/tests
+"ThenTest" start time: Feb 13 22:22 CET
+Output:
+----------------------------------------------------------
+Will write message='aaabbbcccd
+'
+Will write message='aaabbbcccd
+'
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 0, Tail: 1
+  - Elements: [0x7ffef4227500] 
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 0, Tail: 2
+  - Elements: [0x7ffef4227500] [0x7ffef4227480] 
+[Executor] Starting with 2 tasks
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 1, Tail: 2
+  - Elements: [0x7ffef4227480] 
+ThenFuture 0x7ffef4227500 progress. fut1_completed=0
+ThenFuture 0x7ffef42274c0 progress. fut1_completed=0
+PipeReadFuture 0x7ffef42275e0 progress. read_so_far=0, n=1000
+PipeReadFuture 0x7ffef42275e0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x64409e3a1450) fd = 5
+ with future 0x7ffef4227500
+ThenFuture 0x7ffef42274c0 progress. fut1 is pending
+ThenFuture 0x7ffef4227500 progress. fut1 is pending
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 2, Tail: 2
+  - Elements: (empty)
+ThenFuture 0x7ffef4227480 progress. fut1_completed=0
+ThenFuture 0x7ffef4227440 progress. fut1_completed=0
+PipeReadFuture 0x7ffef4227540 progress. read_so_far=0, n=12
+PipeReadFuture 0x7ffef4227540: read 3, errno Success
+PipeReadFuture 0x7ffef4227540: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x64409e3a1450) fd = 4
+ with future 0x7ffef4227480
+ThenFuture 0x7ffef4227440 progress. fut1 is pending
+ThenFuture 0x7ffef4227480 progress. fut1 is pending
+Mio (0x64409e3a1450) polling
+Mio (0x64409e3a1450) received event on fd = -199068544
+Mio (0x64409e3a1450) waking up future 0x7ffef4227480
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 2, Tail: 3
+  - Elements: [0x7ffef4227480] 
+Mio (0x64409e3a1450) received event on fd = -199068416
+Mio (0x64409e3a1450) waking up future 0x7ffef4227500
+[WAKER] In the queue: 0x7ffef4227480
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 2, Tail: 4
+  - Elements: [0x7ffef4227480] [0x7ffef4227500] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 3, Tail: 4
+  - Elements: [0x7ffef4227500] 
+ThenFuture 0x7ffef4227480 progress. fut1_completed=0
+ThenFuture 0x7ffef4227440 progress. fut1_completed=0
+PipeReadFuture 0x7ffef4227540 progress. read_so_far=3, n=12
+PipeReadFuture 0x7ffef4227540: read 3, errno Success
+PipeReadFuture 0x7ffef4227540: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x64409e3a1450) fd = 4
+ with future 0x7ffef4227480
+[Mio] fd already registered
+ThenFuture 0x7ffef4227440 progress. fut1 is pending
+ThenFuture 0x7ffef4227480 progress. fut1 is pending
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 4, Tail: 4
+  - Elements: (empty)
+ThenFuture 0x7ffef4227500 progress. fut1_completed=0
+ThenFuture 0x7ffef42274c0 progress. fut1_completed=0
+PipeReadFuture 0x7ffef42275e0 progress. read_so_far=0, n=1000
+PipeReadFuture 0x7ffef42275e0: read 3, errno Success
+PipeReadFuture 0x7ffef42275e0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x64409e3a1450) fd = 5
+ with future 0x7ffef4227500
+[Mio] fd already registered
+ThenFuture 0x7ffef42274c0 progress. fut1 is pending
+ThenFuture 0x7ffef4227500 progress. fut1 is pending
+Mio (0x64409e3a1450) polling
+Mio (0x64409e3a1450) received event on fd = -199068416
+Mio (0x64409e3a1450) waking up future 0x7ffef4227500
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 4, Tail: 5
+  - Elements: [0x7ffef4227500] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 5, Tail: 5
+  - Elements: (empty)
+ThenFuture 0x7ffef4227500 progress. fut1_completed=0
+ThenFuture 0x7ffef42274c0 progress. fut1_completed=0
+PipeReadFuture 0x7ffef42275e0 progress. read_so_far=3, n=1000
+PipeReadFuture 0x7ffef42275e0: read 3, errno Success
+PipeReadFuture 0x7ffef42275e0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x64409e3a1450) fd = 5
+ with future 0x7ffef4227500
+[Mio] fd already registered
+ThenFuture 0x7ffef42274c0 progress. fut1 is pending
+ThenFuture 0x7ffef4227500 progress. fut1 is pending
+Mio (0x64409e3a1450) polling
+Mio (0x64409e3a1450) received event on fd = -199068544
+Mio (0x64409e3a1450) waking up future 0x7ffef4227480
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 5, Tail: 6
+  - Elements: [0x7ffef4227480] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 6, Tail: 6
+  - Elements: (empty)
+ThenFuture 0x7ffef4227480 progress. fut1_completed=0
+ThenFuture 0x7ffef4227440 progress. fut1_completed=0
+PipeReadFuture 0x7ffef4227540 progress. read_so_far=6, n=12
+PipeReadFuture 0x7ffef4227540: read 3, errno Success
+PipeReadFuture 0x7ffef4227540: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x64409e3a1450) fd = 4
+ with future 0x7ffef4227480
+[Mio] fd already registered
+ThenFuture 0x7ffef4227440 progress. fut1 is pending
+ThenFuture 0x7ffef4227480 progress. fut1 is pending
+Mio (0x64409e3a1450) polling
+Mio (0x64409e3a1450) received event on fd = -199068416
+Mio (0x64409e3a1450) waking up future 0x7ffef4227500
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 6, Tail: 7
+  - Elements: [0x7ffef4227500] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 7, Tail: 7
+  - Elements: (empty)
+ThenFuture 0x7ffef4227500 progress. fut1_completed=0
+ThenFuture 0x7ffef42274c0 progress. fut1_completed=0
+PipeReadFuture 0x7ffef42275e0 progress. read_so_far=6, n=1000
+PipeReadFuture 0x7ffef42275e0: read 3, errno Success
+PipeReadFuture 0x7ffef42275e0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x64409e3a1450) fd = 5
+ with future 0x7ffef4227500
+[Mio] fd already registered
+ThenFuture 0x7ffef42274c0 progress. fut1 is pending
+ThenFuture 0x7ffef4227500 progress. fut1 is pending
+Mio (0x64409e3a1450) polling
+Mio (0x64409e3a1450) received event on fd = -199068544
+Mio (0x64409e3a1450) waking up future 0x7ffef4227480
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 7, Tail: 8
+  - Elements: [0x7ffef4227480] 
+Mio (0x64409e3a1450) received event on fd = -199068416
+Mio (0x64409e3a1450) waking up future 0x7ffef4227500
+[WAKER] In the queue: 0x7ffef4227480
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 7, Tail: 9
+  - Elements: [0x7ffef4227480] [0x7ffef4227500] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 8, Tail: 9
+  - Elements: [0x7ffef4227500] 
+ThenFuture 0x7ffef4227480 progress. fut1_completed=0
+ThenFuture 0x7ffef4227440 progress. fut1_completed=0
+PipeReadFuture 0x7ffef4227540 progress. read_so_far=9, n=12
+PipeReadFuture 0x7ffef4227540: read 3, errno Success
+Unregistering (from Mio = 0x64409e3a1450) fd = 4
+ThenFuture 0x7ffef4227440 progress. fut1 has completed
+ApplyFuture 0x7ffef42273e0 progress. Arg=0x7ffef4227390
+capitalize received string at: 0x7ffef4227390
+capitalize received string of length 11
+ThenFuture 0x7ffef4227440 progress. fut2 has completed
+ThenFuture 0x7ffef4227480 progress. fut1 has completed
+PipeWriteFuture 0x7ffef4227590 progress. written_so_far=0, n=12
+AAABBBCCCD
+
+PipeWriteFuture 0x7ffef4227590: write 12, errno Success
+Unregistering (from Mio = 0x64409e3a1450) fd = 1
+epoll_ctl (EPOLL_CTL_DEL)ThenFuture 0x7ffef4227480 progress. fut2 has completed
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 9, Tail: 9
+  - Elements: (empty)
+ThenFuture 0x7ffef4227500 progress. fut1_completed=0
+ThenFuture 0x7ffef42274c0 progress. fut1_completed=0
+PipeReadFuture 0x7ffef42275e0 progress. read_so_far=9, n=1000
+PipeReadFuture 0x7ffef42275e0: read 3, errno Success
+PipeReadFuture 0x7ffef42275e0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x64409e3a1450) fd = 5
+ with future 0x7ffef4227500
+[Mio] fd already registered
+ThenFuture 0x7ffef42274c0 progress. fut1 is pending
+ThenFuture 0x7ffef4227500 progress. fut1 is pending
+Mio (0x64409e3a1450) polling
+Mio (0x64409e3a1450) received event on fd = -199068416
+Mio (0x64409e3a1450) waking up future 0x7ffef4227500
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 9, Tail: 10
+  - Elements: [0x7ffef4227500] 
+[Executor] Main loop: found 1 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 10, Tail: 10
+  - Elements: (empty)
+ThenFuture 0x7ffef4227500 progress. fut1_completed=0
+ThenFuture 0x7ffef42274c0 progress. fut1_completed=0
+PipeReadFuture 0x7ffef42275e0 progress. read_so_far=12, n=1000
+PipeReadFuture 0x7ffef42275e0: read 0, errno Success
+Unregistering (from Mio = 0x64409e3a1450) fd = 5
+All tests passed!
+<end of output>
+Test time =   2.03 sec
+----------------------------------------------------------
+Test Passed.
+"ThenTest" end time: Feb 13 22:22 CET
+"ThenTest" time elapsed: 00:00:02
+----------------------------------------------------------
+
+5/8 Testing: CombinedTest
+5/8 Test: CombinedTest
+Command: "/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/combined_test"
+Directory: /home/tomek/Studia/PW24/PW-3/tz448580/build/tests
+"CombinedTest" start time: Feb 13 22:22 CET
+Output:
+----------------------------------------------------------
+Will write message='AAABBBCCCD'
+Will write message='AAABBBCCCD'
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 10
+  - Head: 0, Tail: 1
+  - Elements: [0x7ffc66c04b00] 
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 10
+  - Head: 0, Tail: 2
+  - Elements: [0x7ffc66c04b00] [0x7ffc66c04b50] 
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 3 / 10
+  - Head: 0, Tail: 3
+  - Elements: [0x7ffc66c04b00] [0x7ffc66c04b50] [0x7ffc66c04a70] 
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 4 / 10
+  - Head: 0, Tail: 4
+  - Elements: [0x7ffc66c04b00] [0x7ffc66c04b50] [0x7ffc66c04a70] [0x7ffc66c04aa0] 
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 5 / 10
+  - Head: 0, Tail: 5
+  - Elements: [0x7ffc66c04b00] [0x7ffc66c04b50] [0x7ffc66c04a70] [0x7ffc66c04aa0] [0x7ffc66c04ad0] 
+[Executor] Starting with 5 tasks
+[Executor] Main loop: found 5 tasks, processing...
+[Executor] Inner loop: found 5 tasks in the queue
+[Executor] All active tasks: 5
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 4 / 10
+  - Head: 1, Tail: 5
+  - Elements: [0x7ffc66c04b50] [0x7ffc66c04a70] [0x7ffc66c04aa0] [0x7ffc66c04ad0] 
+PipeReadFuture 0x7ffc66c04b00 progress. read_so_far=0, n=11
+PipeReadFuture 0x7ffc66c04b00: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5dae85d6f350) fd = 4
+ with future 0x7ffc66c04b00
+[Executor] Inner loop: found 4 tasks in the queue
+[Executor] All active tasks: 5
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 3 / 10
+  - Head: 2, Tail: 5
+  - Elements: [0x7ffc66c04a70] [0x7ffc66c04aa0] [0x7ffc66c04ad0] 
+PipeReadFuture 0x7ffc66c04b50 progress. read_so_far=0, n=11
+PipeReadFuture 0x7ffc66c04b50: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5dae85d6f350) fd = 5
+ with future 0x7ffc66c04b50
+[Executor] Inner loop: found 3 tasks in the queue
+[Executor] All active tasks: 5
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 2 / 10
+  - Head: 3, Tail: 5
+  - Elements: [0x7ffc66c04aa0] [0x7ffc66c04ad0] 
+ApplyFuture 0x7ffc66c04a70 progress. Arg=0xa
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 4
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 10
+  - Head: 4, Tail: 5
+  - Elements: [0x7ffc66c04ad0] 
+ApplyFuture 0x7ffc66c04aa0 progress. Arg=0x14
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 3
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 10
+  - Head: 5, Tail: 5
+  - Elements: (empty)
+ApplyFuture 0x7ffc66c04ad0 progress. Arg=0x1e
+Mio (0x5dae85d6f350) polling
+Mio (0x5dae85d6f350) received event on fd = 1723878144
+Mio (0x5dae85d6f350) waking up future 0x7ffc66c04b00
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 10
+  - Head: 5, Tail: 6
+  - Elements: [0x7ffc66c04b00] 
+Mio (0x5dae85d6f350) received event on fd = 1723878224
+Mio (0x5dae85d6f350) waking up future 0x7ffc66c04b50
+[WAKER] In the queue: 0x7ffc66c04b00
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 10
+  - Head: 5, Tail: 7
+  - Elements: [0x7ffc66c04b00] [0x7ffc66c04b50] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 10
+  - Head: 6, Tail: 7
+  - Elements: [0x7ffc66c04b50] 
+PipeReadFuture 0x7ffc66c04b00 progress. read_so_far=0, n=11
+PipeReadFuture 0x7ffc66c04b00: read 3, errno Success
+PipeReadFuture 0x7ffc66c04b00: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5dae85d6f350) fd = 4
+ with future 0x7ffc66c04b00
+[Mio] fd already registered
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 10
+  - Head: 7, Tail: 7
+  - Elements: (empty)
+PipeReadFuture 0x7ffc66c04b50 progress. read_so_far=0, n=11
+PipeReadFuture 0x7ffc66c04b50: read 3, errno Success
+PipeReadFuture 0x7ffc66c04b50: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5dae85d6f350) fd = 5
+ with future 0x7ffc66c04b50
+[Mio] fd already registered
+Mio (0x5dae85d6f350) polling
+Mio (0x5dae85d6f350) received event on fd = 1723878224
+Mio (0x5dae85d6f350) waking up future 0x7ffc66c04b50
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 10
+  - Head: 7, Tail: 8
+  - Elements: [0x7ffc66c04b50] 
+Mio (0x5dae85d6f350) received event on fd = 1723878144
+Mio (0x5dae85d6f350) waking up future 0x7ffc66c04b00
+[WAKER] In the queue: 0x7ffc66c04b50
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 10
+  - Head: 7, Tail: 9
+  - Elements: [0x7ffc66c04b50] [0x7ffc66c04b00] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 10
+  - Head: 8, Tail: 9
+  - Elements: [0x7ffc66c04b00] 
+PipeReadFuture 0x7ffc66c04b50 progress. read_so_far=3, n=11
+PipeReadFuture 0x7ffc66c04b50: read 3, errno Success
+PipeReadFuture 0x7ffc66c04b50: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5dae85d6f350) fd = 5
+ with future 0x7ffc66c04b50
+[Mio] fd already registered
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 10
+  - Head: 9, Tail: 9
+  - Elements: (empty)
+PipeReadFuture 0x7ffc66c04b00 progress. read_so_far=3, n=11
+PipeReadFuture 0x7ffc66c04b00: read 3, errno Success
+PipeReadFuture 0x7ffc66c04b00: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5dae85d6f350) fd = 4
+ with future 0x7ffc66c04b00
+[Mio] fd already registered
+Mio (0x5dae85d6f350) polling
+Mio (0x5dae85d6f350) received event on fd = 1723878144
+Mio (0x5dae85d6f350) waking up future 0x7ffc66c04b00
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 10
+  - Head: 9, Tail: 0
+  - Elements: [0x7ffc66c04b00] 
+Mio (0x5dae85d6f350) received event on fd = 1723878224
+Mio (0x5dae85d6f350) waking up future 0x7ffc66c04b50
+[WAKER] In the queue: 0x7ffc66c04b00
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 10
+  - Head: 9, Tail: 1
+  - Elements: [0x7ffc66c04b00] [0x7ffc66c04b50] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 10
+  - Head: 0, Tail: 1
+  - Elements: [0x7ffc66c04b50] 
+PipeReadFuture 0x7ffc66c04b00 progress. read_so_far=6, n=11
+PipeReadFuture 0x7ffc66c04b00: read 3, errno Success
+PipeReadFuture 0x7ffc66c04b00: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5dae85d6f350) fd = 4
+ with future 0x7ffc66c04b00
+[Mio] fd already registered
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 10
+  - Head: 1, Tail: 1
+  - Elements: (empty)
+PipeReadFuture 0x7ffc66c04b50 progress. read_so_far=6, n=11
+PipeReadFuture 0x7ffc66c04b50: read 3, errno Success
+PipeReadFuture 0x7ffc66c04b50: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5dae85d6f350) fd = 5
+ with future 0x7ffc66c04b50
+[Mio] fd already registered
+Mio (0x5dae85d6f350) polling
+Mio (0x5dae85d6f350) received event on fd = 1723878224
+Mio (0x5dae85d6f350) waking up future 0x7ffc66c04b50
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 10
+  - Head: 1, Tail: 2
+  - Elements: [0x7ffc66c04b50] 
+Mio (0x5dae85d6f350) received event on fd = 1723878144
+Mio (0x5dae85d6f350) waking up future 0x7ffc66c04b00
+[WAKER] In the queue: 0x7ffc66c04b50
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 10
+  - Head: 1, Tail: 3
+  - Elements: [0x7ffc66c04b50] [0x7ffc66c04b00] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 10
+  - Head: 2, Tail: 3
+  - Elements: [0x7ffc66c04b00] 
+PipeReadFuture 0x7ffc66c04b50 progress. read_so_far=9, n=11
+PipeReadFuture 0x7ffc66c04b50: read 2, errno Success
+Unregistering (from Mio = 0x5dae85d6f350) fd = 5
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 10
+  - Head: 3, Tail: 3
+  - Elements: (empty)
+PipeReadFuture 0x7ffc66c04b00 progress. read_so_far=9, n=11
+PipeReadFuture 0x7ffc66c04b00: read 2, errno Success
+Unregistering (from Mio = 0x5dae85d6f350) fd = 4
+Result 3: 11
+Result 4: 21
+Result 5: 31
+Elapsed time: 4.002684 seconds
+<end of output>
+Test time =   4.04 sec
+----------------------------------------------------------
+Test Passed.
+"CombinedTest" end time: Feb 13 22:22 CET
+"CombinedTest" time elapsed: 00:00:04
+----------------------------------------------------------
+
+6/8 Testing: BasicThenTest
+6/8 Test: BasicThenTest
+Command: "/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/basic_then_test"
+Directory: /home/tomek/Studia/PW24/PW-3/tz448580/build/tests
+"BasicThenTest" start time: Feb 13 22:22 CET
+Output:
+----------------------------------------------------------
+Will write message='aaabbbcccd
+'
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 0, Tail: 1
+  - Elements: [0x7ffd9c518d20] 
+Running the executor
+[Executor] Starting with 1 tasks
+[Executor] Main loop: found 1 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 1, Tail: 1
+  - Elements: (empty)
+ThenFuture 0x7ffd9c518d20 progress. fut1_completed=0
+PipeReadFuture 0x7ffd9c518d60 progress. read_so_far=0, n=12
+PipeReadFuture 0x7ffd9c518d60: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x654ff5bfe450) fd = 4
+ with future 0x7ffd9c518d20
+ThenFuture 0x7ffd9c518d20 progress. fut1 is pending
+Mio (0x654ff5bfe450) polling
+Mio (0x654ff5bfe450) received event on fd = -1672377056
+Mio (0x654ff5bfe450) waking up future 0x7ffd9c518d20
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 1, Tail: 2
+  - Elements: [0x7ffd9c518d20] 
+[Executor] Main loop: found 1 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 2, Tail: 2
+  - Elements: (empty)
+ThenFuture 0x7ffd9c518d20 progress. fut1_completed=0
+PipeReadFuture 0x7ffd9c518d60 progress. read_so_far=0, n=12
+PipeReadFuture 0x7ffd9c518d60: read 3, errno Success
+PipeReadFuture 0x7ffd9c518d60: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x654ff5bfe450) fd = 4
+ with future 0x7ffd9c518d20
+[Mio] fd already registered
+ThenFuture 0x7ffd9c518d20 progress. fut1 is pending
+Mio (0x654ff5bfe450) polling
+Mio (0x654ff5bfe450) received event on fd = -1672377056
+Mio (0x654ff5bfe450) waking up future 0x7ffd9c518d20
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 2, Tail: 3
+  - Elements: [0x7ffd9c518d20] 
+[Executor] Main loop: found 1 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 3, Tail: 3
+  - Elements: (empty)
+ThenFuture 0x7ffd9c518d20 progress. fut1_completed=0
+PipeReadFuture 0x7ffd9c518d60 progress. read_so_far=3, n=12
+PipeReadFuture 0x7ffd9c518d60: read 3, errno Success
+PipeReadFuture 0x7ffd9c518d60: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x654ff5bfe450) fd = 4
+ with future 0x7ffd9c518d20
+[Mio] fd already registered
+ThenFuture 0x7ffd9c518d20 progress. fut1 is pending
+Mio (0x654ff5bfe450) polling
+Mio (0x654ff5bfe450) received event on fd = -1672377056
+Mio (0x654ff5bfe450) waking up future 0x7ffd9c518d20
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 3, Tail: 4
+  - Elements: [0x7ffd9c518d20] 
+[Executor] Main loop: found 1 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 4, Tail: 4
+  - Elements: (empty)
+ThenFuture 0x7ffd9c518d20 progress. fut1_completed=0
+PipeReadFuture 0x7ffd9c518d60 progress. read_so_far=6, n=12
+PipeReadFuture 0x7ffd9c518d60: read 3, errno Success
+PipeReadFuture 0x7ffd9c518d60: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x654ff5bfe450) fd = 4
+ with future 0x7ffd9c518d20
+[Mio] fd already registered
+ThenFuture 0x7ffd9c518d20 progress. fut1 is pending
+Mio (0x654ff5bfe450) polling
+Mio (0x654ff5bfe450) received event on fd = -1672377056
+Mio (0x654ff5bfe450) waking up future 0x7ffd9c518d20
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 4, Tail: 5
+  - Elements: [0x7ffd9c518d20] 
+[Executor] Main loop: found 1 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 5, Tail: 5
+  - Elements: (empty)
+ThenFuture 0x7ffd9c518d20 progress. fut1_completed=0
+PipeReadFuture 0x7ffd9c518d60 progress. read_so_far=9, n=12
+PipeReadFuture 0x7ffd9c518d60: read 3, errno Success
+Unregistering (from Mio = 0x654ff5bfe450) fd = 4
+ThenFuture 0x7ffd9c518d20 progress. fut1 has completed
+ApplyFuture 0x7ffd9c518cf0 progress. Arg=0x7ffd9c518ca0
+capitalize received string at: 0x7ffd9c518ca0
+capitalize received string of length 11
+ThenFuture 0x7ffd9c518d20 progress. fut2 has completed
+Executor finished
+<end of output>
+Test time =   2.03 sec
+----------------------------------------------------------
+Test Passed.
+"BasicThenTest" end time: Feb 13 22:22 CET
+"BasicThenTest" time elapsed: 00:00:02
+----------------------------------------------------------
+
+7/8 Testing: JoinTest
+7/8 Test: JoinTest
+Command: "/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/join_test"
+Directory: /home/tomek/Studia/PW24/PW-3/tz448580/build/tests
+"JoinTest" start time: Feb 13 22:22 CET
+Output:
+----------------------------------------------------------
+Will write message='aaabbbcccd
+'
+Will write message='aaabbbcccd
+'
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 0, Tail: 1
+  - Elements: [0x7ffd00dc6b90] 
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 0, Tail: 2
+  - Elements: [0x7ffd00dc6b90] [0x7ffd00dc6b10] 
+[Executor] Starting with 2 tasks
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 1, Tail: 2
+  - Elements: [0x7ffd00dc6b10] 
+ThenFuture 0x7ffd00dc6b90 progress. fut1_completed=0
+ThenFuture 0x7ffd00dc6b50 progress. fut1_completed=0
+PipeReadFuture 0x7ffd00dc6c70 progress. read_so_far=0, n=1000
+PipeReadFuture 0x7ffd00dc6c70: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5c47507eb450) fd = 5
+ with future 0x7ffd00dc6b90
+ThenFuture 0x7ffd00dc6b50 progress. fut1 is pending
+ThenFuture 0x7ffd00dc6b90 progress. fut1 is pending
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 2, Tail: 2
+  - Elements: (empty)
+ThenFuture 0x7ffd00dc6b10 progress. fut1_completed=0
+ThenFuture 0x7ffd00dc6ad0 progress. fut1_completed=0
+PipeReadFuture 0x7ffd00dc6bd0 progress. read_so_far=0, n=12
+PipeReadFuture 0x7ffd00dc6bd0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5c47507eb450) fd = 4
+ with future 0x7ffd00dc6b10
+ThenFuture 0x7ffd00dc6ad0 progress. fut1 is pending
+ThenFuture 0x7ffd00dc6b10 progress. fut1 is pending
+Mio (0x5c47507eb450) polling
+Mio (0x5c47507eb450) received event on fd = 14445456
+Mio (0x5c47507eb450) waking up future 0x7ffd00dc6b90
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 2, Tail: 3
+  - Elements: [0x7ffd00dc6b90] 
+Mio (0x5c47507eb450) received event on fd = 14445328
+Mio (0x5c47507eb450) waking up future 0x7ffd00dc6b10
+[WAKER] In the queue: 0x7ffd00dc6b90
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 2, Tail: 4
+  - Elements: [0x7ffd00dc6b90] [0x7ffd00dc6b10] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 3, Tail: 4
+  - Elements: [0x7ffd00dc6b10] 
+ThenFuture 0x7ffd00dc6b90 progress. fut1_completed=0
+ThenFuture 0x7ffd00dc6b50 progress. fut1_completed=0
+PipeReadFuture 0x7ffd00dc6c70 progress. read_so_far=0, n=1000
+PipeReadFuture 0x7ffd00dc6c70: read 3, errno Success
+PipeReadFuture 0x7ffd00dc6c70: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5c47507eb450) fd = 5
+ with future 0x7ffd00dc6b90
+[Mio] fd already registered
+ThenFuture 0x7ffd00dc6b50 progress. fut1 is pending
+ThenFuture 0x7ffd00dc6b90 progress. fut1 is pending
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 4, Tail: 4
+  - Elements: (empty)
+ThenFuture 0x7ffd00dc6b10 progress. fut1_completed=0
+ThenFuture 0x7ffd00dc6ad0 progress. fut1_completed=0
+PipeReadFuture 0x7ffd00dc6bd0 progress. read_so_far=0, n=12
+PipeReadFuture 0x7ffd00dc6bd0: read 3, errno Success
+PipeReadFuture 0x7ffd00dc6bd0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5c47507eb450) fd = 4
+ with future 0x7ffd00dc6b10
+[Mio] fd already registered
+ThenFuture 0x7ffd00dc6ad0 progress. fut1 is pending
+ThenFuture 0x7ffd00dc6b10 progress. fut1 is pending
+Mio (0x5c47507eb450) polling
+Mio (0x5c47507eb450) received event on fd = 14445456
+Mio (0x5c47507eb450) waking up future 0x7ffd00dc6b90
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 4, Tail: 5
+  - Elements: [0x7ffd00dc6b90] 
+Mio (0x5c47507eb450) received event on fd = 14445328
+Mio (0x5c47507eb450) waking up future 0x7ffd00dc6b10
+[WAKER] In the queue: 0x7ffd00dc6b90
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 4, Tail: 6
+  - Elements: [0x7ffd00dc6b90] [0x7ffd00dc6b10] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 5, Tail: 6
+  - Elements: [0x7ffd00dc6b10] 
+ThenFuture 0x7ffd00dc6b90 progress. fut1_completed=0
+ThenFuture 0x7ffd00dc6b50 progress. fut1_completed=0
+PipeReadFuture 0x7ffd00dc6c70 progress. read_so_far=3, n=1000
+PipeReadFuture 0x7ffd00dc6c70: read 3, errno Success
+PipeReadFuture 0x7ffd00dc6c70: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5c47507eb450) fd = 5
+ with future 0x7ffd00dc6b90
+[Mio] fd already registered
+ThenFuture 0x7ffd00dc6b50 progress. fut1 is pending
+ThenFuture 0x7ffd00dc6b90 progress. fut1 is pending
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 6, Tail: 6
+  - Elements: (empty)
+ThenFuture 0x7ffd00dc6b10 progress. fut1_completed=0
+ThenFuture 0x7ffd00dc6ad0 progress. fut1_completed=0
+PipeReadFuture 0x7ffd00dc6bd0 progress. read_so_far=3, n=12
+PipeReadFuture 0x7ffd00dc6bd0: read 3, errno Success
+PipeReadFuture 0x7ffd00dc6bd0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5c47507eb450) fd = 4
+ with future 0x7ffd00dc6b10
+[Mio] fd already registered
+ThenFuture 0x7ffd00dc6ad0 progress. fut1 is pending
+ThenFuture 0x7ffd00dc6b10 progress. fut1 is pending
+Mio (0x5c47507eb450) polling
+Mio (0x5c47507eb450) received event on fd = 14445456
+Mio (0x5c47507eb450) waking up future 0x7ffd00dc6b90
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 6, Tail: 7
+  - Elements: [0x7ffd00dc6b90] 
+Mio (0x5c47507eb450) received event on fd = 14445328
+Mio (0x5c47507eb450) waking up future 0x7ffd00dc6b10
+[WAKER] In the queue: 0x7ffd00dc6b90
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 6, Tail: 8
+  - Elements: [0x7ffd00dc6b90] [0x7ffd00dc6b10] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 7, Tail: 8
+  - Elements: [0x7ffd00dc6b10] 
+ThenFuture 0x7ffd00dc6b90 progress. fut1_completed=0
+ThenFuture 0x7ffd00dc6b50 progress. fut1_completed=0
+PipeReadFuture 0x7ffd00dc6c70 progress. read_so_far=6, n=1000
+PipeReadFuture 0x7ffd00dc6c70: read 3, errno Success
+PipeReadFuture 0x7ffd00dc6c70: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5c47507eb450) fd = 5
+ with future 0x7ffd00dc6b90
+[Mio] fd already registered
+ThenFuture 0x7ffd00dc6b50 progress. fut1 is pending
+ThenFuture 0x7ffd00dc6b90 progress. fut1 is pending
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 8, Tail: 8
+  - Elements: (empty)
+ThenFuture 0x7ffd00dc6b10 progress. fut1_completed=0
+ThenFuture 0x7ffd00dc6ad0 progress. fut1_completed=0
+PipeReadFuture 0x7ffd00dc6bd0 progress. read_so_far=6, n=12
+PipeReadFuture 0x7ffd00dc6bd0: read 3, errno Success
+PipeReadFuture 0x7ffd00dc6bd0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5c47507eb450) fd = 4
+ with future 0x7ffd00dc6b10
+[Mio] fd already registered
+ThenFuture 0x7ffd00dc6ad0 progress. fut1 is pending
+ThenFuture 0x7ffd00dc6b10 progress. fut1 is pending
+Mio (0x5c47507eb450) polling
+Mio (0x5c47507eb450) received event on fd = 14445456
+Mio (0x5c47507eb450) waking up future 0x7ffd00dc6b90
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 8, Tail: 9
+  - Elements: [0x7ffd00dc6b90] 
+Mio (0x5c47507eb450) received event on fd = 14445328
+Mio (0x5c47507eb450) waking up future 0x7ffd00dc6b10
+[WAKER] In the queue: 0x7ffd00dc6b90
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 2 / 42
+  - Head: 8, Tail: 10
+  - Elements: [0x7ffd00dc6b90] [0x7ffd00dc6b10] 
+[Executor] Main loop: found 2 tasks, processing...
+[Executor] Inner loop: found 2 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 9, Tail: 10
+  - Elements: [0x7ffd00dc6b10] 
+ThenFuture 0x7ffd00dc6b90 progress. fut1_completed=0
+ThenFuture 0x7ffd00dc6b50 progress. fut1_completed=0
+PipeReadFuture 0x7ffd00dc6c70 progress. read_so_far=9, n=1000
+PipeReadFuture 0x7ffd00dc6c70: read 3, errno Success
+PipeReadFuture 0x7ffd00dc6c70: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x5c47507eb450) fd = 5
+ with future 0x7ffd00dc6b90
+[Mio] fd already registered
+ThenFuture 0x7ffd00dc6b50 progress. fut1 is pending
+ThenFuture 0x7ffd00dc6b90 progress. fut1 is pending
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 2
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 10, Tail: 10
+  - Elements: (empty)
+ThenFuture 0x7ffd00dc6b10 progress. fut1_completed=0
+ThenFuture 0x7ffd00dc6ad0 progress. fut1_completed=0
+PipeReadFuture 0x7ffd00dc6bd0 progress. read_so_far=9, n=12
+PipeReadFuture 0x7ffd00dc6bd0: read 3, errno Success
+Unregistering (from Mio = 0x5c47507eb450) fd = 4
+ThenFuture 0x7ffd00dc6ad0 progress. fut1 has completed
+ApplyFuture 0x7ffd00dc6a70 progress. Arg=0x7ffd00dc6a20
+capitalize received string at: 0x7ffd00dc6a20
+capitalize received string of length 11
+ThenFuture 0x7ffd00dc6ad0 progress. fut2 has completed
+ThenFuture 0x7ffd00dc6b10 progress. fut1 has completed
+PipeWriteFuture 0x7ffd00dc6c20 progress. written_so_far=0, n=12
+AAABBBCCCD
+
+PipeWriteFuture 0x7ffd00dc6c20: write 12, errno Success
+Unregistering (from Mio = 0x5c47507eb450) fd = 1
+epoll_ctl (EPOLL_CTL_DEL)ThenFuture 0x7ffd00dc6b10 progress. fut2 has completed
+Mio (0x5c47507eb450) polling
+Mio (0x5c47507eb450) received event on fd = 14445456
+Mio (0x5c47507eb450) waking up future 0x7ffd00dc6b90
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 42
+  - Head: 10, Tail: 11
+  - Elements: [0x7ffd00dc6b90] 
+[Executor] Main loop: found 1 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 42
+  - Head: 11, Tail: 11
+  - Elements: (empty)
+ThenFuture 0x7ffd00dc6b90 progress. fut1_completed=0
+ThenFuture 0x7ffd00dc6b50 progress. fut1_completed=0
+PipeReadFuture 0x7ffd00dc6c70 progress. read_so_far=12, n=1000
+PipeReadFuture 0x7ffd00dc6c70: read 0, errno Success
+Unregistering (from Mio = 0x5c47507eb450) fd = 5
+<end of output>
+Test time =  10.03 sec
+----------------------------------------------------------
+Test Passed.
+"JoinTest" end time: Feb 13 22:22 CET
+"JoinTest" time elapsed: 00:00:10
+----------------------------------------------------------
+
+8/8 Testing: BasicJoinTest
+8/8 Test: BasicJoinTest
+Command: "/home/tomek/Studia/PW24/PW-3/tz448580/build/tests/basic_join_test"
+Directory: /home/tomek/Studia/PW24/PW-3/tz448580/build/tests
+"BasicJoinTest" start time: Feb 13 22:22 CET
+Output:
+----------------------------------------------------------
+Will write message='AAABBBCCCD'
+Will write message='AAABBBCCCD'
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 10
+  - Head: 0, Tail: 1
+  - Elements: [0x7ffdd5466560] 
+[Executor] Starting with 1 tasks
+[Executor] Main loop: found 1 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 10
+  - Head: 1, Tail: 1
+  - Elements: (empty)
+JoinFuture 0x7ffdd5466560 progress. fut1_completed=0, fut2_completed=0
+PipeReadFuture 0x7ffdd54664c0 progress. read_so_far=0, n=11
+PipeReadFuture 0x7ffdd54664c0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x612ee70a5350) fd = 4
+ with future 0x7ffdd5466560
+PipeReadFuture 0x7ffdd5466510 progress. read_so_far=0, n=11
+PipeReadFuture 0x7ffdd5466510: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x612ee70a5350) fd = 5
+ with future 0x7ffdd5466560
+Mio (0x612ee70a5350) polling
+Mio (0x612ee70a5350) received event on fd = -716806816
+Mio (0x612ee70a5350) waking up future 0x7ffdd5466560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 10
+  - Head: 1, Tail: 2
+  - Elements: [0x7ffdd5466560] 
+Mio (0x612ee70a5350) received event on fd = -716806816
+Mio (0x612ee70a5350) waking up future 0x7ffdd5466560
+[WAKER] In the queue: 0x7ffdd5466560
+[WAKER] Not requeuing the future, it's already in the queue
+[Executor] Main loop: found 1 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 10
+  - Head: 2, Tail: 2
+  - Elements: (empty)
+JoinFuture 0x7ffdd5466560 progress. fut1_completed=0, fut2_completed=0
+PipeReadFuture 0x7ffdd54664c0 progress. read_so_far=0, n=11
+PipeReadFuture 0x7ffdd54664c0: read 3, errno Success
+PipeReadFuture 0x7ffdd54664c0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x612ee70a5350) fd = 4
+ with future 0x7ffdd5466560
+[Mio] fd already registered
+PipeReadFuture 0x7ffdd5466510 progress. read_so_far=0, n=11
+PipeReadFuture 0x7ffdd5466510: read 3, errno Success
+PipeReadFuture 0x7ffdd5466510: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x612ee70a5350) fd = 5
+ with future 0x7ffdd5466560
+[Mio] fd already registered
+Mio (0x612ee70a5350) polling
+Mio (0x612ee70a5350) received event on fd = -716806816
+Mio (0x612ee70a5350) waking up future 0x7ffdd5466560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 10
+  - Head: 2, Tail: 3
+  - Elements: [0x7ffdd5466560] 
+Mio (0x612ee70a5350) received event on fd = -716806816
+Mio (0x612ee70a5350) waking up future 0x7ffdd5466560
+[WAKER] In the queue: 0x7ffdd5466560
+[WAKER] Not requeuing the future, it's already in the queue
+[Executor] Main loop: found 1 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 10
+  - Head: 3, Tail: 3
+  - Elements: (empty)
+JoinFuture 0x7ffdd5466560 progress. fut1_completed=0, fut2_completed=0
+PipeReadFuture 0x7ffdd54664c0 progress. read_so_far=3, n=11
+PipeReadFuture 0x7ffdd54664c0: read 3, errno Success
+PipeReadFuture 0x7ffdd54664c0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x612ee70a5350) fd = 4
+ with future 0x7ffdd5466560
+[Mio] fd already registered
+PipeReadFuture 0x7ffdd5466510 progress. read_so_far=3, n=11
+PipeReadFuture 0x7ffdd5466510: read 3, errno Success
+PipeReadFuture 0x7ffdd5466510: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x612ee70a5350) fd = 5
+ with future 0x7ffdd5466560
+[Mio] fd already registered
+Mio (0x612ee70a5350) polling
+Mio (0x612ee70a5350) received event on fd = -716806816
+Mio (0x612ee70a5350) waking up future 0x7ffdd5466560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 10
+  - Head: 3, Tail: 4
+  - Elements: [0x7ffdd5466560] 
+[Executor] Main loop: found 1 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 10
+  - Head: 4, Tail: 4
+  - Elements: (empty)
+JoinFuture 0x7ffdd5466560 progress. fut1_completed=0, fut2_completed=0
+PipeReadFuture 0x7ffdd54664c0 progress. read_so_far=6, n=11
+PipeReadFuture 0x7ffdd54664c0: read 3, errno Success
+PipeReadFuture 0x7ffdd54664c0: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x612ee70a5350) fd = 4
+ with future 0x7ffdd5466560
+[Mio] fd already registered
+PipeReadFuture 0x7ffdd5466510 progress. read_so_far=6, n=11
+PipeReadFuture 0x7ffdd5466510: read 3, errno Success
+PipeReadFuture 0x7ffdd5466510: read -1, errno Resource temporarily unavailable
+Registering (in Mio = 0x612ee70a5350) fd = 5
+ with future 0x7ffdd5466560
+[Mio] fd already registered
+Mio (0x612ee70a5350) polling
+Mio (0x612ee70a5350) received event on fd = -716806816
+Mio (0x612ee70a5350) waking up future 0x7ffdd5466560
+[WAKER] Requeuing the future
+[Executor] Spawned future
+[DEBUG] Pushed to queue.
+[DEBUG] Queue State:
+  - Size: 1 / 10
+  - Head: 4, Tail: 5
+  - Elements: [0x7ffdd5466560] 
+[Executor] Main loop: found 1 tasks, processing...
+[Executor] Inner loop: found 1 tasks in the queue
+[Executor] All active tasks: 1
+[DEBUG] Popped from queue.
+[DEBUG] Queue State:
+  - Size: 0 / 10
+  - Head: 5, Tail: 5
+  - Elements: (empty)
+JoinFuture 0x7ffdd5466560 progress. fut1_completed=0, fut2_completed=0
+PipeReadFuture 0x7ffdd54664c0 progress. read_so_far=9, n=11
+PipeReadFuture 0x7ffdd54664c0: read 2, errno Success
+Unregistering (from Mio = 0x612ee70a5350) fd = 4
+PipeReadFuture 0x7ffdd5466510 progress. read_so_far=9, n=11
+PipeReadFuture 0x7ffdd5466510: read 2, errno Success
+Unregistering (from Mio = 0x612ee70a5350) fd = 5
+Elapsed time: 4.001811 seconds
+<end of output>
+Test time =   4.03 sec
+----------------------------------------------------------
+Test Passed.
+"BasicJoinTest" end time: Feb 13 22:22 CET
+"BasicJoinTest" time elapsed: 00:00:04
+----------------------------------------------------------
+
+End testing: Feb 13 22:22 CET

@@ -161,12 +161,14 @@ void waker_wake(Waker* waker)
     Future* fut = waker->future;
     // Put the future back into the executor's queue (if it's not already there).
     FutureQueue* queue = executor->queue;
-    for (size_t i = queue->head; i < queue->size; i = (i + 1) % queue->max_queue_size) {
-        debug("[WAKER] In the queue: %p\n", queue->futures[i]);
-        if (queue->futures[i] == fut) {
+    size_t k = queue->head;
+    for (size_t i = 0; i < queue->size; i++) {
+        debug("[WAKER] In the queue: %p\n", queue->futures[k]);
+        if (queue->futures[k] == fut) {
             debug("[WAKER] Not requeuing the future, it's already in the queue\n");
             return;
         }
+        k = (k + 1) % queue->max_queue_size;
     }
     debug("[WAKER] Requeuing the future\n");
     executor_spawn(executor, fut);

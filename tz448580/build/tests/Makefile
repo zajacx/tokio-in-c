@@ -242,6 +242,20 @@ basic_join_test/fast:
 	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_join_test.dir/build.make tests/CMakeFiles/basic_join_test.dir/build
 .PHONY : basic_join_test/fast
 
+# Convenience name for target.
+tests/CMakeFiles/basic_select_test.dir/rule:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/basic_select_test.dir/rule
+.PHONY : tests/CMakeFiles/basic_select_test.dir/rule
+
+# Convenience name for target.
+basic_select_test: tests/CMakeFiles/basic_select_test.dir/rule
+.PHONY : basic_select_test
+
+# fast build rule for target.
+basic_select_test/fast:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_select_test.dir/build.make tests/CMakeFiles/basic_select_test.dir/build
+.PHONY : basic_select_test/fast
+
 basic_join_test.o: basic_join_test.c.o
 .PHONY : basic_join_test.o
 
@@ -265,6 +279,30 @@ basic_join_test.s: basic_join_test.c.s
 basic_join_test.c.s:
 	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_join_test.dir/build.make tests/CMakeFiles/basic_join_test.dir/basic_join_test.c.s
 .PHONY : basic_join_test.c.s
+
+basic_select_test.o: basic_select_test.c.o
+.PHONY : basic_select_test.o
+
+# target to build an object file
+basic_select_test.c.o:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_select_test.dir/build.make tests/CMakeFiles/basic_select_test.dir/basic_select_test.c.o
+.PHONY : basic_select_test.c.o
+
+basic_select_test.i: basic_select_test.c.i
+.PHONY : basic_select_test.i
+
+# target to preprocess a source file
+basic_select_test.c.i:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_select_test.dir/build.make tests/CMakeFiles/basic_select_test.dir/basic_select_test.c.i
+.PHONY : basic_select_test.c.i
+
+basic_select_test.s: basic_select_test.c.s
+.PHONY : basic_select_test.s
+
+# target to generate assembly for a file
+basic_select_test.c.s:
+	cd /home/tomek/Studia/PW24/PW-3/tz448580/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basic_select_test.dir/build.make tests/CMakeFiles/basic_select_test.dir/basic_select_test.c.s
+.PHONY : basic_select_test.c.s
 
 basic_then_test.o: basic_then_test.c.o
 .PHONY : basic_then_test.o
@@ -467,6 +505,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... basic_join_test"
+	@echo "... basic_select_test"
 	@echo "... basic_then_test"
 	@echo "... combined_test"
 	@echo "... executor_test"
@@ -478,6 +517,9 @@ help:
 	@echo "... basic_join_test.o"
 	@echo "... basic_join_test.i"
 	@echo "... basic_join_test.s"
+	@echo "... basic_select_test.o"
+	@echo "... basic_select_test.i"
+	@echo "... basic_select_test.s"
 	@echo "... basic_then_test.o"
 	@echo "... basic_then_test.i"
 	@echo "... basic_then_test.s"
